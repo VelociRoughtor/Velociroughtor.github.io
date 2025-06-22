@@ -1,0 +1,73 @@
+:root {
+  --bg: #f9f9f9;
+  --fg: #2c3e50;
+  --card-bg: #ffffff;
+  --card-border: #ccc;
+  --link: #2980b9;
+}
+
+body.dark-mode {
+  --bg: #1e1e1e;
+  --fg: #f1f1f1;
+  --card-bg: #2c2c2c;
+  --card-border: #444;
+  --link: #3498db;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  max-width: 900px;
+  margin: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  color: var(--fg);
+}
+
+.cert {
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.cert img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.toggle-btn {
+  background-color: var(--link);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.toggle-btn:hover {
+  background-color: #1a6fa5;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+}
